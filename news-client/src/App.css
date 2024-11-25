@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/* HomePage styling */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+    .post-list .post-card {
+        background-color: #fff;
+        width: 80%;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .post-list .post-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+.post-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.post-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.post-card button {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+    .post-card button:hover {
+        background-color: #c82333;
+    }
+
+/* PostDetailPage styling */
+.post-detail-container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .post-detail-container h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        color: #333;
+    }
+
+    .post-detail-container p {
+        color: #777;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+.comment-section {
+    margin-top: 40px;
+    border-top: 2px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .comment strong {
+        display: block;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .comment p {
+        margin-top: 8px;
+        color: #555;
+    }
+
+.comment-footer {
+    font-size: 12px;
+    color: #888;
+}
+
+    .comment-footer span {
+        margin-right: 10px;
+    }
+
+/* Formulaire de création de commentaire */
+.form-container {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        outline: none;
+    }
+
+        .form-container input:focus,
+        .form-container textarea:focus {
+            border-color: #007bff;
+        }
+
+    .form-container button {
+        width: 100%;
+        background-color: #28a745;
+        padding: 12px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+    }
+
+        .form-container button:hover {
+            background-color: #218838;
+        }
+
+/* Bouton de retour */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+    .back-button:hover {
+        background-color: #5a6268;
+    }
+/* Formulaire de création de post */
+.create-post-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .create-post-container h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .create-post-container .form-container {
+        margin-top: 20px;
+    }
+
+    .create-post-container input,
+    .create-post-container textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        outline: none;
+    }
+
+        .create-post-container input:focus,
+        .create-post-container textarea:focus {
+            border-color: #007bff;
+        }
+
+    .create-post-container button {
+        width: 100%;
+        background-color: #007bff;
+        padding: 14px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+    }
+
+        .create-post-container button:hover {
+            background-color: #0056b3;
+        }
+
+    .create-post-container .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 16px;
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+        .create-post-container .back-button:hover {
+            background-color: #5a6268;
+        }
+/* Style des boutons de tri */
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .sort-buttons button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 0 10px;
+    }
+
+        .sort-buttons button:hover {
+            background-color: #0056b3;
+        }

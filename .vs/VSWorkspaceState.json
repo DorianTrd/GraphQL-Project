@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\news-client",
+    "\\news-client\\src\\components",
+    "\\news-client\\src\\pages",
+    "\\server\\config",
+    "\\server\\graphql",
+    "\\server\\models"
+  ],
+  "SelectedNode": "\\news-client\\.gitignore",
+  "PreviewInSolutionExplorer": false
+}
